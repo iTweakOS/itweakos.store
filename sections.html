@@ -37,17 +37,25 @@ html, body {
 
 
 
+@-webkit-keyframes rainbow {
+  0% {border-color: hsl(0, 100%, 50%);}
+  100% {border-color: hsl(255, 100%, 50%);}
+}
+
+.rainbow_border{
+  border-bottom: 4px solid hsl(0, 100%, 50%);
+  -webkit-animation: rainbow 5s infinite alternate;
+}
+
+
 </style>
 </head>
 <body>
 
-  <main>
-    <div class="-content -index">
-      <div>
 
-        <center><div style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);width:100%;padding:6px;background-color:#222222;">
-          <h1 style="font-family:arial;font-size:25px;margin:0px;color:white;"><img style="width:20px;border-radius:5px;margin-right:2px;margin-top:6px;" src="https://onuniverse-assets.imgix.net/755E8191-9A86-43E2-A71F-2E3CAB34FFF6.jpg?q=75&dpr=1.25"></img>iTweakOS</h1>
-        </div></center>
+  <center><div class="rainbow_border" style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);width:100%;padding:6px;background-color:#222222;">
+    <h1 style="font-family:arial;font-size:25px;margin:0px;color:white;"><img style="width:20px;border-radius:5px;margin-right:2px;margin-top:6px;" src="https://onuniverse-assets.imgix.net/755E8191-9A86-43E2-A71F-2E3CAB34FFF6.jpg?q=75&dpr=1.25"></img>iTweakOS</h1>
+  </div></center>
 
 
 <center><div style="padding:30px;background: linear-gradient(to bottom, #FF5E3A, #FF2A68);">
