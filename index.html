@@ -17,6 +17,10 @@
 <head>
 <style>
 
+@viewport {
+    orientation: portrait;
+}
+
 @font-face { font-family: ut; src: url('Ubuntu-Title.ttf'); }
 
 body{
@@ -229,7 +233,6 @@ select:focus {
 </head>
 <body>
 <span data-text="
-
 
   <h5 style="font-family:ut;margin-left:17px;font-size:12px;">
       <script>
@@ -1078,16 +1081,7 @@ s.setAttribute('data-timestamp', +new Date());
 </body>
 </html>
 
-<script>
-$(document).ready(function () {
-  function reorient(e) {
-    var portrait = (window.orientation % 180 == 0);
-    $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
-  }
-  window.onorientationchange = reorient;
-  window.setTimeout(reorient, 0);
-});
-</script>
+
 
 
 <script type="text/javascript">
