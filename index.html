@@ -29,15 +29,9 @@ html, body {
     overflow-x: hidden;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
+@media screen and (orientation: portrait) {
+  #toolbar {
+    width: 100%;
   }
 }
 
@@ -238,6 +232,7 @@ select:focus {
 </style>
 </head>
 <body>
+  <div id="toolbar">
 <span data-text="
 
 
@@ -1085,6 +1080,7 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 </div>
 "></span>
+</div>
 </body>
 </html>
 
