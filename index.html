@@ -3,6 +3,9 @@
 <link rel="icon" href="https://onuniverse-assets.imgix.net/1438B68A-054C-4B70-AE1F-1ADCF58B7787.jpg?q=75&dpr=1.25" type="image/gif" sizes="16x16">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
 <title>iTweakOS</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script async="async" data-cfasync="false" src="//tharbadir.com/2?z=1996854"></script>
 <script async="async" data-cfasync="false" src="//tharbadir.com/2?z=1996860"></script>
 <script async="async" data-cfasync="false" src="//tharbadir.com/2?z=1996861"></script>
@@ -39,7 +42,7 @@ h1 {
   font-size: 40px;
   line-height: 0.8em;
   color: rgba(255,255,255,0.2);}
-a {
+.tabs1 a {
     background: #fd264f;
     color: #fff;
     display: block;
@@ -47,12 +50,8 @@ a {
     line-height: 1em;
     margin: 0;
     padding: 5px 110px;
-    position: fixed;
-    top: 20px;
-    right: -100px;
     text-align: center;
     text-decoration: none;
-    transform: rotate(45deg);
 }
 button:focus,
 input:focus,
@@ -236,6 +235,7 @@ select:focus {
 
 <h1 style="font-family:ut;font-size:30px;color:#ffffff;margin-left:17px">iTweakOS</h1>
 
+<div class="tabs1">
 <div class="tabs">
   <div class="tab-2">
     <label style="font-family:ut;" for="tab2-1">Home</label>
@@ -391,6 +391,45 @@ select:focus {
 <center>
 <h2 style="border-bottom:solid;border-bottom-color:#fd264f;"></h2>
 </center>
+<center>
+<div style="width:90%;">
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://itweakos.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+</center>
+
+<center>
+<h2 style="border-bottom:solid;border-bottom-color:#fd264f;"></h2>
+</center>
+<br>
+<center>
+<div style="width:90%;">
+  <h2 style="font-family:ut;font-size:15px;color:white;">Sponsor</h2>
+  <br>
+<script async="async" data-cfasync="false" src="//native.propellerads.com/1?z=2047417&eid="></script>
+</div>
+</center>
+<br>
     </div>
   </div>
   <div class="tab-2">
@@ -399,58 +438,609 @@ select:focus {
     <div>
       <center>
   <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
-  <span
-     onclick="location='appstore.html'">
-  <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
-  <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/AppStore_new_logo.svg/2000px-AppStore_new_logo.svg.png">Appstore Apps</h1>
-  <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Paid Apps</p>
-  </span>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Appstore</a></li>
+        <li><a data-toggle="tab" href="#menu1">iTweakOS</a></li>
+        <li><a data-toggle="tab" href="#menu2">Tweaked</a></li>
+        <li><a data-toggle="tab" href="#menu3">Hacked</a></li>
+      </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/fmm.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://ipabox.store/icons/fmm.png">FMM 2018</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Appstore Apps</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/sygic.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://s3-storage.textopus.nl/wp-content/uploads/2015/07/18040158/Sygic-icon.png">Sygic Garaveli</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Appstore Apps</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/superimpose.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/52/04/6b/52046b53-43e4-31e0-3240-29361ed6d095/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/246x0w.jpg">Superimpose X</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Appstore Apps</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/cutecutpro.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is2.mzstatic.com/image/thumb/Purple118/v4/03/70/69/03706968-2399-a1d8-e7c4-12897394ead9/source/512x512bb.jpg">Cute Cut Pro</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Appstore Apps</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/draftcode.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://ipabox.store/icons/draftcode.png">DraftCode</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Appstore Apps</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/mimomod.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/91/4f/79/914f7960-517d-73e2-1481-426f77660d95/AppIcon-1x_U007emarketing-85-220-0-6.png/246x0w.jpg">MimoMod</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Appstore Apps</p>
+      </div>
+      </center>
+
+      <center>
+      <h2 style="border-bottom:solid;border-bottom-color:#fd264f;"></h2>
+      </center>
+      <br>
+      <center>
+      <div style="width:80%;">
+        <h2 style="font-family:ut;font-size:15px;color:white;">Sponsor</h2>
+        <br>
+      <script async="async" data-cfasync="false" src="//native.propellerads.com/1?z=2047417&eid="></script>
+      </div>
+      </center>
+      <br>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services:///?action=download-manifest&url=https://caspia.000webhostapp.com/plists/bobbymusic.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://ipas.fun/images/bobbymusic++.png">Bobby Music</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services:///?action=download-manifest&url=https://caspia.000webhostapp.com/plists/play.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/play.png">Play!</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services:///?action=download-manifest&url=https://caspia.000webhostapp.com/plists/lazyman.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://ipas.fun/images/lazyman.png">LazyMan</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services:///?action=download-manifest&url=https://caspia.000webhostapp.com/plists/itransmission.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://plus-ksa.com/pro19/img/iTransmission.png">iTransmission</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='http://caspxd.cf/iOS12.mobileconfig'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/IOS_12_logo.svg/2000px-IOS_12_logo.svg.png">iOS 12 Beta</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='http://caspxd.cf/imulator.mobileconfig'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/BA7096A6-5CDB-4E71-A2D3-055D5B3BDA8E.jpg?q=75&dpr=1.25">iMulator</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='http://caspxd.cf/tvOS.mobileconfig'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://i.imgur.com/MrRmZJK.png">tvOS (Block Updates)</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services:///?action=download-manifest&url=https://caspia.000webhostapp.com/plists/nothx.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/nothx.png">NoThx!</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='https://eclipseemu.me/''" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/964559269810114561/uWxGnJ4y_400x400.jpg">Eclipse</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/icleaner.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://s1.mzstatic.com/us/r30/Purple4/v4/ce/96/df/ce96df34-ccc1-657d-bd6c-ebdfd7d06e8a/mzl.ikfxqzrt.png">iCleaner</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/electramp.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/electra.png">Electra Multipath</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/electraremover2.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/electra.png">ElectraRemover2.5</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/electra.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/electra.png">Electra Old</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/gba4ios.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://im5.tongbu.com/userapp/AppIcon/201703/16/090640150.png">GBA4iOS</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/airshou.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/airshou.png">AirShou</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/meridian.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://3.bp.blogspot.com/-CvP7ybX6210/WlE7-ozh3zI/AAAAAAAAPxM/6SJb5IKDWNsMcKiw6yoJy3wcemMUqGsGQCLcBGAs/s1600/cydia-1900000332-icon.png">Meridian</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/gc4ios.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/gc4ios.png">GC4iOS</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/irstream.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/B9DC8D13-0E40-4DB7-AEAF-38529BEA3026.jpg?q=75&dpr=1">irStream</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/thor.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://avatars2.githubusercontent.com/u/9352064?s=400&v=4">Th0r</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/moviebox.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://ipabox.store/icons/moviebox.png">MovieBox</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/myos.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://im5.tongbu.com/userapp/AppIcon/201706/06/015300888.jpg">myOS</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/bobbymovie.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://images.tutuapp.com/picture/app_ios/us/002/68/77/86/2687786.175x175-75.jpg?f=23053a63d0f14ce94fd608c6736c02c9">Bobby Movie</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/netflixchecker.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://ipas.fun/images/netflixchecker.png">NetflixChecker</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/himusic.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/himusic.png">hiMusic</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/happychick.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://im5.tongbu.com/userapp/AppIcon/201703/17/050549399.png">Happy Chick</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='http://caspxd.cf/ipcu2.mobileconfig'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/C2BCBB86-9691-4C69-B2F0-1B6F202F9CAF.jpg?q=75&dpr=1.25">iPCU 2</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p>
+      </div>
+      </center>
+      <center>
+      <h2 style="border-bottom:solid;border-bottom-color:#fd264f;"></h2>
+      </center>
+      <br>
+      <center>
+      <div style="width:80%;">
+        <h2 style="font-family:ut;font-size:15px;color:white;">Sponsor</h2>
+        <br>
+      <script async="async" data-cfasync="false" src="//native.propellerads.com/1?z=2047417&eid="></script>
+      </div>
+      </center>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/onecast.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://is2-ssl.mzstatic.com/image/thumb/Purple128/v4/d1/c5/b4/d1c5b468-5b6a-7baf-362e-12c59a83935b/source/512x512bb.jpg">OneCast++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/apollo.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://pbs.twimg.com/profile_images/958746930007429121/zTv1-Zz4.jpg">Apollo++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/speedtest.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://store-images.s-microsoft.com/image/apps.17557.13510798887693184.f17a0156-31bb-4cd8-a528-bce93ba02099.a38af496-4d9b-4831-828e-f942c6126042?mode=crop&q=90&h=270&w=270&format=jpg&background=%23000000">Speedtest++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/cercube.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/a0/dc/f7/a0dcf783-e671-8b3c-4fe8-00c0c16ab5d3/source/512x512bb.jpg">Cercube++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/crunchy.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is4.mzstatic.com/image/thumb/Purple122/v4/d1/44/28/d14428f5-327f-a9f2-231a-83fb686599a7/source/512x512bb.jpg">Crunchyroll++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/deezer.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://ipabox.store/icons/deezer%2b%2b.png">Deezer++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/fb.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is4.mzstatic.com/image/thumb/Purple127/v4/6b/8e/0c/6b8e0c9a-96a5-f528-44a6-28c3e58ff747/source/512x512bb.jpg">Facebook++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/instagram.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is1.mzstatic.com/image/thumb/Purple117/v4/12/f3/7c/12f37c3e-2682-bd5c-d101-dce6ad89e594/source/512x512bb.jpg">Instagram++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/instagramred.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is1.mzstatic.com/image/thumb/Purple117/v4/12/f3/7c/12f37c3e-2682-bd5c-d101-dce6ad89e594/source/512x512bb.jpg">Instagram++ Red</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/kik.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/75/88/f9/7588f923-e45e-f024-0672-549aa0406269/source/128x128-75.jpg">Kik++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/mimo.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is1.mzstatic.com/image/thumb/Purple127/v4/8a/b6/74/8ab67430-7d4e-72b0-f424-4567d7ab63f0/source/512x512bb.jpg">Mimo++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/musical.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/dd/d8/9f/ddd89fcf-f94d-eea6-4daf-a79512d9165d/W__AppIcon-1x_U007emarketing-85-220-0-5.png/128x128.png">Musical.ly++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/nba.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is2.mzstatic.com/image/thumb/Purple117/v4/73/e9/71/73e971b4-b8b2-229f-359b-525b38df5659/source/512x512bb.jpg">NBA++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/rocket.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is1.mzstatic.com/image/thumb/Purple117/v4/12/f3/7c/12f37c3e-2682-bd5c-d101-dce6ad89e594/source/512x512bb.jpg">Instagram Rocket</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/snapblack.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="img/snapblack.png">SnapBlack++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/snapsilver.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="img/snapsilver.png">SnapSilver++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/spotify.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://is2.mzstatic.com/image/thumb/Purple127/v4/55/84/6a/55846adb-32c7-3ccf-c6ee-788519f53f82/source/512x512bb.jpg">Spotify++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/spotifyblue.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://ipabox.store/icons/spotifyblue.png">Spotify++ Blue</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/spotifypink.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="img/spotifypink.png">Spotify++ Pink</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/spotifyred.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="img/spotifyred.png">Spotify++ Red</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/whatsgold.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="img/whatsgold.png">WhatsGold++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/whatssilver.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="img/whatssilver.png">WhatsSilver++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/yt.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/a0/dc/f7/a0dcf783-e671-8b3c-4fe8-00c0c16ab5d3/source/512x512bb.jpg">YouTube++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked</p>
+      </div>
+      </center>
+
+      <center>
+      <h2 style="border-bottom:solid;border-bottom-color:#fd264f;"></h2>
+      </center>
+      <br>
+      <center>
+      <div style="width:80%;">
+        <h2 style="font-family:ut;font-size:15px;color:white;">Sponsor</h2>
+        <br>
+      <script async="async" data-cfasync="false" src="//native.propellerads.com/1?z=2047417&eid="></script>
+      </div>
+      </center>
+      <br>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/pubg.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="http://lh3.googleusercontent.com/VpoWDgQ2I_RlTNM1Srlo5Q0VQglr-gdbzJ48TwYRXM2U4iF75PMrv76rBiu5c3l1UJs=w300">PUBG Mobile Hack</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Hacked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/pokemongo.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/bc/08/7a/bc087a3a-f51d-d91f-0702-6676c14d5814/source/1024x1024bb.jpg">Pokemon Go Hack</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Hacked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/pokego.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://ipas.fun/images/pokego++.png">PokeGo++</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Hacked</p>
+      </div>
+      </center>
+
+      <center>
+      <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
+        <p style="text-decoration:none;margin:0px;" onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/pokegodc.plist'" >
+      <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
+      <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://ipas.fun/images/pokego++.png">PokeGo++ Donar Crack</h1>
+      <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Hacked</p>
+      </div>
+      </center>
+
+      <center>
+      <h2 style="border-bottom:solid;border-bottom-color:##fd264f;"></h2>
+      </center>
+      <br>
+      <center>
+      <div style="width:80%;">
+        <h2 style="font-family:ut;font-size:15px;color:white;">Sponsor</h2>
+        <br>
+      <script async="async" data-cfasync="false" src="//native.propellerads.com/1?z=2047417&eid="></script>
+      </div>
+      </center>
+      <br>
+    </div>
+
   </div>
-  </center>
-<center>
-<div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
-<span
-onclick="location='itweakos.html'">
-<h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
-<img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/1438B68A-054C-4B70-AE1F-1ADCF58B7787.jpg?q=75&dpr=1.25">iTweakOS Apps</h1>
-<p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Amazing Apps</p>
-</span>
 </div>
-</center>
-<center>
-<div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
-<span
-onclick="location='tweaked.html'">
-<h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
-<img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://t2.uc.ltmcdn.com/images/5/8/9/img_como_eliminar_spotify_de_mi_cronologia_de_facebook_3985_600.jpg">Tweaked Apps</h1>
-<p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Modified Apps</p>
-</span>
-</div>
-</center>
-<center>
-<div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
-<span
-onclick="location='hacked.html'">
-<h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
-<img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://c1.staticflickr.com/2/1739/27525455217_56ebe6e422_c.jpg">Hacked Games</h1>
-<p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Tweaked Games</p>
-</span>
-</div>
-</center>
-<center>
-<div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
-<span
-onclick="location='chat.html'">
-<h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
-<img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://onuniverse-assets.imgix.net/1438B68A-054C-4B70-AE1F-1ADCF58B7787.jpg?q=75&dpr=1.25">Discussion</h1>
-<p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">Chat</p>
-</span>
-</div>
-</center>
     </div>
   </div>
 </div>
 
+</div>
 </div>
 
 </body>
