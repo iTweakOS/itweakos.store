@@ -49,11 +49,13 @@ html {
   user-select: none;
 }
 
-[data-text] {
-  color: orange;
-}
-[data-text]::after {
-  content: attr(data-text);
+.noselect {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 h1 {
@@ -232,7 +234,7 @@ select:focus {
 </style>
 </head>
 <body>
-<span data-text="
+<label class="noselect">
 
   <h5 style="font-family:ut;margin-left:17px;font-size:12px;">
       <script>
@@ -1077,7 +1079,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 </div>
 </div>
-"></span>
+</label>
 </body>
 </html>
 
