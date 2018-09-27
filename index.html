@@ -29,11 +29,7 @@ html, body {
     overflow-x: hidden;
 }
 
-@media screen and (orientation: portrait) {
-  #toolbar {
-    width: 100%;
-  }
-}
+
 
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -232,7 +228,6 @@ select:focus {
 </style>
 </head>
 <body>
-  <div id="toolbar">
 <span data-text="
 
 
@@ -1080,10 +1075,19 @@ s.setAttribute('data-timestamp', +new Date());
 </div>
 </div>
 "></span>
-</div>
 </body>
 </html>
 
+<script>
+$(document).ready(function () {
+  function reorient(e) {
+    var portrait = (window.orientation % 180 == 0);
+    $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
+  }
+  window.onorientationchange = reorient;
+  window.setTimeout(reorient, 0);
+});
+</script>
 
 
 <script type="text/javascript">
