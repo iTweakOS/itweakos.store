@@ -9,11 +9,7 @@
 <script async="async" data-cfasync="false" src="//tharbadir.com/2?z=1996854"></script>
 <script async="async" data-cfasync="false" src="//tharbadir.com/2?z=1996860"></script>
 <script async="async" data-cfasync="false" src="//tharbadir.com/2?z=1996861"></script>
-<script>
-       if (!window.navigator.standalone) {
-        location.href = "error.html";
-       }
-       </script>
+
 <head>
 <style>
 
@@ -236,9 +232,252 @@ select:focus {
 }
 
 
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.pg {
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  /*yellow*/
+  border: 1px solid #0F0F43;
+  /* navy*/
+}
+
+.night {
+  animation-name: tonight;
+  animation-duration: 5s;
+  background-color: #040018;
+}
+
+@keyframes tonight {
+  from {
+    background-color: white;
+    /*yellow*/
+  }
+  to {
+    background-color: #040018;
+  }
+}
+
+.day {
+  animation-name: today;
+  animation-duration: 5s;
+  background-color: white;
+}
+
+@keyframes today {
+  from {
+    background-color: #040018;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+.box {
+  height: 60px;
+  width: 160px;
+  margin-left: 600px;
+  margin-top: 100px;
+  border-radius: 40px;
+  border: 2px solid #E7E7EC;
+  /* gray*/
+  background-color: #0D0D3C;
+  /*nice navy*/
+}
+
+.boxedin {
+  animation-name: boxedin;
+  animation-duration: 3s;
+  background-color: #f44327;
+  /*nice red*/
+}
+
+@keyframes boxedin {
+  from {
+    background-color: #0D0D3C;
+    /*nice navy*/
+  }
+  to {
+    background-color: #f44327;
+    /*nice red*/
+  }
+}
+
+.boxedout {
+  animation-name: boxedout;
+  animation-duration: 3s;
+  background-color: #0D0D3C;
+  /*nice navy*/
+}
+
+@keyframes boxedout {
+  from {
+    background-color: #f44327;
+    /*nice red*/
+  }
+  to {
+    background-color: #0D0D3C;
+    /*nice navy*/
+  }
+}
+
+.switch {
+  height: 50px;
+  width: 150px;
+  margin-top: 3px;
+  margin-left: 3px;
+  border-radius: 30px;
+  border: 2px solid #E7E7EC;
+  /* gray*/
+  background-color: #6f6f8e;
+  /*bluy gray*/
+}
+
+.switchedin {
+  animation-name: switchedin;
+  animation-duration: 3s;
+  background-color: #FBFFC9;
+  /*yellow*/
+}
+
+@keyframes switchedin {
+  from {
+    background-color: #6f6f8e;
+    /*bluy gray*/
+  }
+  to {
+    background-color: #FBFFC9;
+    /*yellow*/
+  }
+}
+
+.switchedout {
+  animation-name: switchedout;
+  animation-duration: 3s;
+  background-color: #6f6f8e;
+  /*bluy gray*/
+}
+
+@keyframes switchedout {
+  from {
+    background-color: #FBFFC9;
+    /*yellow*/
+  }
+  to {
+    background-color: #6f6f8e;
+    /*bluy gray*/
+  }
+}
+
+.yoke {
+  height: 40px;
+  width: 45px;
+  border-radius: 20px;
+  margin-top: 3px;
+  margin-left: 5px;
+  background-color: #FBFFC9;
+  /*yellow*/
+}
+
+.yoked {
+  animation-name: yokeAnim;
+  animation-duration: 3s;
+  margin-left: 97px;
+  background-color: #f44327;
+  /*nice red*/
+}
+
+@keyframes yokeAnim {
+  from {
+    background-color: #FBFFC9;
+    /*yellow*/
+    margin-left: 5px;
+  }
+  to {
+    background-color: #f44327;
+    /*nice red*/
+    margin-left: 97px;
+  }
+}
+
+.unyoked {
+  animation-name: unyokeAnim;
+  animation-duration: 3s;
+  margin-left: 5px;
+  background-color: #FBFFC9;
+  /*yellow*/
+}
+
+@keyframes unyokeAnim {
+  from {
+    background-color: #f44327;
+    /*nice red*/
+    margin-left: 97px;
+  }
+  to {
+    background-color: #FBFFC9;
+    /*yellow*/
+    margin-left: 5px;
+  }
+}
+
+.te {
+  height: 500px;
+  width: 500px;
+  margin-left: 430px;
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.teedin {
+  animation-name: teed;
+  animation-duration: 4s;
+  color: #c5b2cc;
+  /*light purpuly*/
+}
+
+@keyframes teedin {
+  from {
+    color: #190022;
+    /*dark purply*/
+  }
+  to {
+    color: #c5b2cc;
+    /*light purpuly*/
+  }
+}
+
+.teedout {
+  animation-name: teed;
+  animation-duration: 4s;
+  color: #190022;
+  /*dark purply*/
+}
+
+@keyframes teedout {
+  from {
+    color: #c5b2cc;
+    /*light purpuly*/
+  }
+  to {
+    color: #190022;
+    /*dark purply*/
+  }
+}
+
+p {
+  font-size: 40px;
+}
+
 </style>
 </head>
-<body>
+<body >
 <div class="noselect">
 
   <h5 style="font-family:ut;margin-left:17px;font-size:12px;">
@@ -355,6 +594,7 @@ select:focus {
 </div>
 </div>
 </center>
+
 <center>
 <h2 style="border-bottom:solid;border-bottom-color:#fd264f;"></h2>
 <br>
@@ -472,6 +712,7 @@ s.setAttribute('data-timestamp', +new Date());
         <li><a style="font-family:ut;" data-toggle="tab" href="#menu1">iTweakOS</a></li>
         <li><a style="font-family:ut;" data-toggle="tab" href="#menu2">Tweaked</a></li>
         <li><a style="font-family:ut;" data-toggle="tab" href="#menu3">Hacked</a></li>
+        <li><a style="font-family:ut;" data-toggle="tab" href="#menu4">Settings</a></li>
       </ul>
 </center>
   <div class="tab-content">
@@ -673,7 +914,7 @@ s.setAttribute('data-timestamp', +new Date());
 
       <center>
       <div style="margin:10px;text-align: justify;width:100%;background-color:#222222;padding:5px;">
-        <span onclick="location='itms-services://?action=download-manifest&amp;url=https://caspia.000webhostapp.com/plists/airshou.plist'" > <p style="text-decoration:none;margin:0px;">
+        <span onclick="location='itms-services://?action=download-manifest&amp;url=https://caspxd.org/plists/airshou.plist'" > <p style="text-decoration:none;margin:0px;">
       <h1 style="margin-left:5%;margin-top:10px;font-family:ut;font-size:15px;color:#ffffff;text-decoration:none;"  >
       <img  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-right:10px; width:40px;border-radius:20%;" align="left" src="https://cdn.tweakboxapp.com/icons/airshou.png">AirShou</h1>
       <p style="margin-left:15%;margin-top:4px;font-family:ut;font-size:12px;color:#f2f2f2;text-decoration:none;">iTweakOS</p></span>
@@ -1078,13 +1319,28 @@ s.setAttribute('data-timestamp', +new Date());
       </div>
       </center>
       <br>
+      <div id="menu4" class="tab-pane fade">
+        <div class="pg">
+          <div class="box">
+            <div class="switch">
+              <div class="yoke"></div>
+            </div>
+          </div>
+          <div class="te">
+            Useful little feature for <br><p>Night Owls</p>or people who work during the night. The dark background will put less strain on the eyes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
 
   </div>
+
 </div>
-    </div>
-  </div>
-</div>
+
 
 </div>
 </div>
@@ -1092,7 +1348,35 @@ s.setAttribute('data-timestamp', +new Date());
 </body>
 </html>
 
-
+<script>
+'use strict';
+$(document).ready(function() {
+  $(".yoke").click(function() {
+    if ($(".pg").hasClass("night")) {
+      $(".pg").removeClass("night");
+      $(".box").removeClass("boxedin");
+      $(".switch").removeClass("switchedin");
+      $(".te").removeClass("teedin");
+      $(".pg").addClass("day");
+      $(".yoke").addClass("unyoked");
+      $(".box").addClass("boxedout");
+      $(".switch").addClass("switchedout");
+      $(".te").addClass("teedout");
+    } else {
+      $(".yoke").removeClass("unyoked");
+      $(".switch").removeClass("switchedout");
+      $(".te").removeClass("teedout");
+      $(".pg").removeClass("day");
+      $(".box").removeClass("boxedout");
+      $(".yoke").addClass("yoked");
+      $(".pg").addClass("night");
+      $(".box").addClass("boxedin");
+      $(".switch").addClass("switchedin");
+      $(".te").addClass("teedin");
+    }
+  });
+});
+</script>
 
 
 <script type="text/javascript">
